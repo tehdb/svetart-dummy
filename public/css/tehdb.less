@@ -1,35 +1,64 @@
+@green : #2E8B57;
+@red :  #CD5C5C;
+@orange : #FFA500;
+@light-green : #A2CD5A;
+@light-blue : #A4D3EE;
+@background : white;
+
+
+.main-navi-button( @color ) {
+	background-color: @color;
+	&:hover, &:focus { 
+		background-color: saturate(@color, 25%);
+	}
+
+	&:active {
+		background-color: darken(@color, 5%);
+	}
+}
+
+
+body {
+	background : @light-blue;
+	padding-top: 20px;
+}
+
+.row {
+	background: @background;
+}
+
 #TH-main-navi {
-	line-height: 7;
+	margin-top: 20px;
+	background : @background;
 
 	li {
 		overflow: hidden;
 		position: relative;
 		
 		.button {
-			line-height: 4;
+			line-height: 6;
+			border: 1px solid @background;
 		}
 
+		.TH-green {
+			.main-navi-button( @green);
+		}
 
 		.TH-red {
-			background-color: red;
-			&:hover, &:focus { 
-				background-color: #dc1404; 
-			}
-
-			&:active {
-				background-color: black; 
-			}
+			.main-navi-button( @red);
 		}
 		
-		.TH-green {
-			background-color: green;
-			&:hover, &:focus { 
-				background-color: #509933; 
-			}
 
-			&:active {
-				background-color: black; 
-			}
+		.TH-orange {
+			.main-navi-button( @orange);
+		}
+
+		.TH-light-green {
+			.main-navi-button( @light-green);
+		}
+
+		.TH-light-blue {
+			.main-navi-button( @light-blue);
 		}
 	}
 
@@ -50,6 +79,32 @@
 	}
 }
 
+#TH-logo {
+	color: @green;
+	font-size: 33px;
+}
+
+ul#TH-info {
+	li {
+		color: @green;
+		font-size: 14px;
+		font-weight: bold;
+	}	
+}
+
+
+.TH-content {
+	border-top: 1px solid @green;
+	margin-top: 15px;
+	padding-top: 15px;
+}
+
+
+.TH-footer {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid @green;
+}
 
 .f-dropdown {
 	background-color: black;

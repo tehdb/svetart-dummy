@@ -1612,7 +1612,7 @@ form.custom {
     -webkit-border-radius: 0 1000px 1000px 0;
     border-radius: 0 1000px 1000px 0; }
   .button-group.even-2 li {
-    width: 33.33333%; }
+    width: 50%; }
     .button-group.even-2 li .button {
       width: 100%; }
   .button-group.even-3 li {
@@ -1620,23 +1620,23 @@ form.custom {
     .button-group.even-3 li .button {
       width: 100%; }
   .button-group.even-4 li {
-    width: 33.33333%; }
+    width: 25%; }
     .button-group.even-4 li .button {
       width: 100%; }
   .button-group.even-5 li {
-    width: 33.33333%; }
+    width: 20%; }
     .button-group.even-5 li .button {
       width: 100%; }
   .button-group.even-6 li {
-    width: 33.33333%; }
+    width: 16.66667%; }
     .button-group.even-6 li .button {
       width: 100%; }
   .button-group.even-7 li {
-    width: 33.33333%; }
+    width: 14.28571%; }
     .button-group.even-7 li .button {
       width: 100%; }
   .button-group.even-8 li {
-    width: 33.33333%; }
+    width: 12.5%; }
     .button-group.even-8 li .button {
       width: 100%; }
 
