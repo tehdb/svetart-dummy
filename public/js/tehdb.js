@@ -26,6 +26,9 @@ $(function () {
 				$this.mouseenter(blenderAni);
 			});
 
+		}).click(function(){
+			// forward click event
+			$this.click();
 		});
 	}
 
