@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs | tehdb</title>
+</head>
+<body ng-app="tehdbApp">
+	<div ng-controller="controller1">
+		<input type="text" ng-model="data.message">
+		<h1>{{data.message}}</h1>
+	</div>
+
+	<div ng-controller="controller2">
+		<input type="text" ng-model="data.message">
+		<h1>{{data.message|reverse}}</h1>
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

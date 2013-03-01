@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
+
+  <link rel="stylesheet" href="libs/foundation4/css/normalize.css" />
+  <link rel="stylesheet" href="libs/foundation4/css/foundation.css" />
+
+
+  <link rel="stylesheet/less" type="text/css" href="css/tehdb.less">
+  <script type="text/javascript" src="libs/less-1.3.3.min.js"></script>
+
+  
+
+  <script src="libs/foundation4/js/vendor/custom.modernizr.js"></script>
+
+  <!--[if gte IE 9]><style type="text/css">.gradient { filter: none; }</style><![endif]-->
+</head>
+<body>
+
+	<div class="row">
+		<div class="small-12 large-12 columns">
+			<ul id="TH-main-navi" class="button-group even-3">
+				<li><a href="#" class="button TH-red">btn 1</a></li>
+				<li><a href="#" data-dropdown="drop1" class="button dropdown TH-green">btn 2</a></li>
+				<li><a href="#" class="button">btn 3</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<ul id="drop1" class="f-dropdown">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+	</ul>
+
+	<div class="row">
+		<div class="small-6 large-5 columns">
+			<div class="panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius repellat ipsam! Magnam error veniam harum id adipisci sapiente laboriosam iste vel corporis sint doloremque molestias quaerat repellendus iusto neque.</div>
+		</div>
+		<div class="small-6 large-7 columns">
+			<div class="panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius repellat ipsam! Magnam error veniam harum id adipisci sapiente laboriosam iste vel corporis sint doloremque molestias quaerat repellendus iusto neque.</div>
+		</div>
+	</div>
+
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'libs/foundation4/js/vendor/zepto' : 'libs/foundation4/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="libs/foundation4/js/foundation.min.js"></script>
+  <!--
+  <script src="libs/foundation4/js/foundation/foundation.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.alerts.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.clearing.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.cookie.js"></script>
+-->
+  <script src="libs/foundation4/js/foundation/foundation.dropdown.js"></script>
+  <!--
+  <script src="libs/foundation4/js/foundation/foundation.forms.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.joyride.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.magellan.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.orbit.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.placeholder.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.reveal.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.section.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.tooltips.js"></script>
+  <script src="libs/foundation4/js/foundation/foundation.topbar.js"></script>
+  -->
+  <script type="text/javascript" src="js/tehdb.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="de"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Page Title</title>
+
+	<link rel="stylesheet" href="libs/foundation/stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="libs/foundation/stylesheets/app.css">
+	<script src="libs/foundation/javascripts/modernizr.foundation.js"></script>
+</head>
+
+<body>
+	<h1>TeHdb</h1>
+	<div ng-app="">
+		
+		<div ng-controller="Ctrl1">
+			<h1>foundation & angularjs</h1>
+			<input type="text" ng-model="data.message">
+			<div class="{{data.message}}">tehdb is in da house</div>
+		</div>
+	</div>
+
+	<ul class="pagination">
+		<li class="arrow unavailable"><a href="">&laquo;</a></li>
+		<li class="current"><a href="">1</a></li>
+		<li><a href="">2</a></li>
+		<li><a href="">3</a></li>
+		<li><a href="">4</a></li>
+		<li class="unavailable"><a href="">&hellip;</a></li>
+		<li><a href="">12</a></li>
+		<li><a href="">13</a></li>
+		<li class="arrow"><a href="">&raquo;</a></li>
+	</ul>
+
+	<div data-alert class="alert-box">
+	was geht hier ab?
+  <a href="#" class="close">&times;</a>
+</div>
+
+	<div class="row">
+		<div class="small-6 large-5 columns"><div class="panel">small 6 large 5</div></div>
+		<div class="small-6 large-7 columns"><div class="panel">small 6 large 7</div></div>
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+	<script src="js/foundation.js"></script>
+
+	<script src="libs/foundation/javascripts/foundation.min.js"></script>
+	<script src="libs/foundation/javascripts/app.js"></script>
+</body>
+</html>
