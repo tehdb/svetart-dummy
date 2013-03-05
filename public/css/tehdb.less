@@ -1,14 +1,16 @@
-@green : #AEC919;
-@yellow : #E3C800;
+@green : #adc71a;
+@yellow : #e3c500;
 @red :  #CD5C5C;
-@pink: #DB8388;
-@orange : #E6A014;
+@pink: #d98286;
+@orange : #e6a015;
 @light-green : #A2CD5A;
-@light-blue : #7CBAB9;
-@background : #EDE9DD;
-@olive : #616E0D;
-@gray : #8F8F8F;
+@light-blue : #7bb8b7;
+@background : #ebe8dd;
+@olive : #616e0d;
+@drak-gray : #575756;
+@gray : #8a8a8a;
 @white: #ffffff;
+
 
 
 
@@ -24,10 +26,16 @@
 	}
 }
 
+.text-shadow( @h, @v, @b, @c) {
+	text-shadow: @h @v @b @c;
+   	filter: dropshadow(color=@c, offx=@h, offy=@v);
+}
+
 
 body {
 	background : @background;
 	padding-top: 20px;
+	padding-bottom: 30px;
 	font-family: 'Roboto';
 }
 
@@ -35,21 +43,28 @@ body {
 	background: @white;
 }
 
+.TH-main-navi-wr {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
 #TH-main-navi {
-	margin-top: 20px;
 	background : @white;
 
 	li {
 		overflow: hidden;
 		position: relative;
+		margin: 0;
+		padding: 0;
 		.button {
-			font-size: 22px;
+			white-space: nowrap;
+			font-size: 24px;
 			font-weight: 300;
 			height: 130px;
 			padding: 85px 0 0 25px;
 			margin-bottom: 0;
 			text-align: left;
-			border: 1px solid @white;
+			border: 1px solid @background;
 
 			&.active {
 				padding: 55px 0 0 25px;
@@ -119,7 +134,6 @@ body {
 }
 
 #svetart-logo {
-	margin-left: 22px;
 	width: 407px;
 	height: 112px;
 	background: url(img/logo.png)
@@ -128,64 +142,122 @@ body {
 
 #TH-info {
 	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+	padding-top: 15px;
+	padding-left: 45px;
 
 	li {
 		color: @olive;
-		font-size: 12px;
-		font-weight: bold;
+		font-size: 13px;
+		font-weight: 400;
+		margin-bottom: 5px;
 		padding-left: 1em;
 		text-indent: -1em;
+		white-space: nowrap;
 
 		&:before {
 			content: ">";
 			padding-right: 5px;
 		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
+.row .column, .row .columns {
+	padding-left: 30px ; //!important;
+	padding-right: 30px; // !important;
+}
 
-.breadcrumbs {
-	background: none;
-	border-color: @green;
-	border-radius: 2px;
-	margin-top: 20px;
+.TH-breadcrumbs-wr {
+	border-top: 1px solid @green;
+	margin-top: 30px;
+	.breadcrumbs {
+		border: none;
+		/*
+		background: none;
+		border-color: @green;
+		border-radius: 2px;
+		margin-top: 20px;
+		*/
+		padding-left: 0;
+		background: none;
 
-	li {
-		a {
-			color: @green;
-		}
 
-		&.current {
-			a {
-				color: @olive;
+		li {
+
+			&.current {
+				a {
+					color: @green;
+				}
 			}
 		}
 	}
 }
 
+
+
 .TH-content {
-	margin-top: 15px;
-	padding-top: 15px;
 	color: @gray;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	//letter-spacing: 0.05em;
-}
 
-.TH-border-top {
-	border-top: 1px solid @green;
-	margin-top: 20px;
-	padding-top: 20px;
+	h1, h2, h3 {
+		color: @drak-gray;
+		font-size: 24px;
+		font-weight: 300;
+		margin-top: 20px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+	//letter-spacing: 0.05em;
 }
 
 
 .TH-footer {
+
+	margin-top: 50px;
+	padding-top: 10px;
+	border-top: 1px solid @green;
 	padding-bottom: 20px;
+	color: @gray;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-align: right;
+	.copy {
+		margin-right: 10px;
+	}
+
+	a {
+		margin-left: 10px;
+	}
 
 }
+
+a.TH-std-link {
+	color: @olive !important;
+	text-decoration: none !important;
+
+	&:hover, &:focus {
+		color: @green !important;
+		text-decoration: none !important;
+	}
+
+	&:active {
+		.text-shadow( 0, 0, 4px, @green);
+	}
+}
+
+
 
 .f-dropdown {
 	background-color: black;
