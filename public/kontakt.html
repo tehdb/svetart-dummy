@@ -30,10 +30,10 @@
 		<div class="small-12 large-12 columns TH-main-navi-wr">
 			<ul id="TH-main-navi" class="button-group even-5">
 				<li><a href="/home.html" class="button TH-green">home</a></li>
-				<li><a href="/about.html" class="button TH-yellow active">über mich</a></li>
+				<li><a href="/about.html" class="button TH-yellow">über mich</a></li>
 				<li><a href="/service.html" class="button TH-orange">service</a></li>
 				<li><a href="/medien.html" class="button TH-red">medien</a></li>
-				<li><a href="/kontakt.html" class="button TH-light-blue">kontakt</a></li>
+				<li><a href="/kontakt.html" class="button TH-light-blue active">kontakt</a></li>
 			</ul>
 		</div>
 	</div>
@@ -45,7 +45,7 @@
 		</div>
 		<div class="small-3 large-3 columns">
 			<ul id="TH-info" class="no-bullet">
-				<li><a href="/kalender.html">Kalender</a></li>
+				<li><a class="TH-std-link" href="/kalender.html">Kalender</a></li>
 				<li>info@svetart.org</li>
 				<li>0170 123456789</li>
 			</ul>
@@ -56,29 +56,57 @@
 		<div class="large-12 columns TH-breadcrumbs-wr">
 			<ul class="breadcrumbs">
 				<li><a class="TH-std-link" href="/home.html">Home</a></li>
-				<li class="current"><a href="#">über mich</a></li>
+				<li class="current"><a href="#">kontakt</a></li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="small-12 large-12 columns TH-content">
-			<h1>Lorem ipsum dolor</h1>
-			<p>
-			<img class="TH-align-left" src="/css/img/home-bild-1.jpg" alt="home bild 1"/>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius repellat ipsam! Magnam error veniam harum id adipisci sapiente laboriosam iste vel corporis sint doloremque molestias quaerat repellendus iusto neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestias odio labore voluptas consectetur tempore impedit quas pariatur sint adipisci tempora iusto 
-			</p>
-			<h2>a iste rerum eaque</h2>
+	<div class="row TH-contact">
+		<div class="small-6 large-6 columns">
+			<h2>Kontakt</h2>
+			<form>
+				<label for="TH-contact-name">Vorname, Name:</label>
+				<input id="TH-contact-name" type="text" placeholder="Muster musterman">
 
+				<label for="TH-contact-email">E-Mail Adresse:</label>
+				<input id="TH-contact-email" type="text" placeholder="username@domain.com">
 
-			<p>
-			<img class="TH-align-right" src="/css/img/home-bild-1.jpg" alt="home bild 1"/> 
-			amet animi dolorem aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex optio sapiente odit deleniti iste enim pariatur similique cumque in itaque quaerat non ea impedit dignissimos doloremque incidunt fuga dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni tempore quos recusandae alias praesentium pariatur officiis ratione cum doloremque error fuga amet. Harum tempora cum eos ab quas impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis odit deserunt neque amet aut nesciunt vitae iure quis! Non est error voluptates minus consequatur odit veritatis hic ratione eaque labore!
-			</p>
-			<h3>veniam libero soluta est</h3>
-			<p>
-			distinctio nulla labore ullam reiciendis cum esse fugit nisi fugiat perspiciatis odio ipsum inventore eaque qui consequuntur sunt corporis officiis quidem nam dicta? Eius iusto quo dolores ex unde sed dolore reiciendis ipsam maxime eos dolorum repellat aut nemo obcaecati quia esse voluptatum in facilis culpa doloribus ipsum ratione beatae quis! Distinctio fugit quaerat officiis perferendis pariatur repellat placeat tempora veniam nemo inventore fugiat eos quibusdam dolor.
-			</p>
+				<label for="TH-contact-message">Nachricht:</label>
+				<textarea id="TH-contact-message" placeholder="some text"></textarea>
+				<a -href="#" class="TH-more-link">Senden</a>
+        	</form>
+		</div>
+		<div class="small-6 large-6 columns TH-addresses">
+			<h2>Adressen</h2>
+
+			<div class="row TH-address">
+				<div class="small-6 large-6 columns">
+					<div class="TH-title">Coaching</div>
+					Alexander Platz 1<br />
+					12345 Berlin
+				</div>
+				<div class="small-6 large-6 columns">
+					030 98 76 54 32<br />
+					<a href="#" class="TH-std-link">info@svetart.org</a>
+				</div>
+
+				<iframe width="440" height="440" src="http://regiohelden.de/google-maps/map.php?width=440&amp;height=440&amp;hl=de&amp;q=Alexander%20Platz%201%2C%20Berlin+(SvetArt%20Academy%20Adresse 1)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+
+			<div class="row TH-address">
+				<div class="small-6 large-6 columns">
+					<div class="TH-title">Coaching</div>
+					Alexander Platz 1<br />
+					12345 Berlin
+				</div>
+				<div class="small-6 large-6 columns">
+					030 98 76 54 32<br />
+					<a href="#" class="TH-std-link">info@svetart.org</a>
+				</div>
+
+				<iframe width="440" height="440" src="http://regiohelden.de/google-maps/map.php?width=440&amp;height=440&amp;hl=de&amp;q=Alexander%20Platz%201%2C%20Berlin+(SvetArt%20Academy%20Adresse 2)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+			
 		</div>
 	</div>
 
